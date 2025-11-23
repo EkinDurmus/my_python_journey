@@ -15,6 +15,6 @@ input_date = datetime.strptime(input_date, "%d/%m/%Y")
 print("You entered: " + str(input_date))
 
 #calculate date one week from current date input
-one_week = timedelta(weeks=1)
+one_week = timedelta(days=7)
 week_after = input_date + one_week
 print("The date after one week is:" + str(week_after))
