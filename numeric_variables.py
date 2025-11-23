@@ -1,0 +1,7 @@
+first_num = input("Please enter the first value ")
+second_num = input("Please enter the second value ")
+answer = int(first_num) + int(second_num)
+# print("= answer: ")
+# print( int(first_num ) + int(second_num ))
+print("The answer is: ")
+print(first_num + " + " + second_num + " = " + str(answer))
