@@ -1,0 +1,31 @@
+# syntax error example
+x = 42
+y = 206
+# python wants ':' sign after if statement
+# if you don't put it, you'll get a syntax error
+# but if you put it, you'll get no error
+# in this code x isn't equal to y, so nothing will be printed on the screen
+if x == y 
+    print("Success")
+
+# runtime error example
+x = 42
+y = 0
+try:
+    print(x / y)
+except ZeroDivisionError as e:
+    # Optionally, log e somewhere
+    print('Sorry, something went wrong')
+    #this block runs if there is any error not caught by previous except blocks
+except:
+    print('Something really went wrong')
+finally:
+    print('This always runs on success or failure')
+
+#logic errors
+x = 206
+y = 42
+if x < y:
+# The logic error in this line is that it is incorrect because x is actually greater than y
+#if we want to check if x is greater than y, we should use '>' instead of '<'
+    print(str(x) + ' is greater than ' + str(y))
