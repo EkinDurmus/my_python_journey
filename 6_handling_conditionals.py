@@ -1,7 +1,7 @@
 #if we want to calculate the tax
 price = input("Please enter the price:")
 
-#then we need to convert the strint to a number
+#then we need to convert the string to a number
 price = float(price)
 
 #lets's we say anything purchased for more than $1.00 is charged a 7% tax
@@ -11,10 +11,10 @@ if price >= 1.00:
     tax = .07 
     print("The tax rate is:" + str(tax))
 
-#python is not a case sensitive language
+#python is a case sensitive language
 country = input("Please enter the country you are in:")
 #if country == "turkey":
-#this using will be wrong because it is case sensitive
+#This is incorrect because of Python's case sensitivity
 if country.lower() == "turkey":
     print("Merhaba!")
 else:
@@ -27,11 +27,11 @@ else:
 # If I enter 0.50 I should see the message "Tax rate is: 0" 
 
 price = input('how much did you pay? ')
-#this line is correct but we need to convert to float
+#We need to convert to float
 price = float(price)
 
 if price > 1.00:
-#we need to see if we enter 1.00, so we need to use >=      
+#We need to see if we enter 1.00, so we need to use >=      
 	tax = .07
 	print('Tax rate is: ' + str(tax))
 #this line is correct
