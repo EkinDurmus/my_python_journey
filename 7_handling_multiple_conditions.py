@@ -1,21 +1,21 @@
-# country = input("What country do you live in? ")
-# if country.lower() == "canada":
-#     province = input("Which province/state do you live in? ").capitalize()
-#     if province in("Alberta", \
-#                    "Nunavut", "Yukon"):
-# #we can use nested if statements to handle multiple conditions
-# #and with using "IN" we can check for multiple values in a single condition 
-#                    tax = 0.05
-#     elif province == "Ontario":
-#             #elif means "else if"
-#             #elif statements are used to check for multiple conditions 
-#             tax = 0.13
-#     else:
-#             tax = 0.15
-# else:
-#     tax = 0.0
-# print(tax)   
-# 
+country = input("What country do you live in? ")
+if country.lower() == "canada":
+    province = input("Which province/state do you live in? ").capitalize()
+    if province in("Alberta", \
+                   "Nunavut", "Yukon"):
+#we can use nested if statements to handle multiple conditions
+#and with using "IN" we can check for multiple values in a single condition 
+                   tax = 0.05
+    elif province == "Ontario":
+            #elif means "else if"
+            #elif statements are used to check for multiple conditions 
+            tax = 0.13
+    else:
+            tax = 0.15
+else:
+    tax = 0.0
+print(tax)   
+
 
 
 # code challenge - my mission is:
