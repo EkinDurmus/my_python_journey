@@ -26,14 +26,32 @@
 first_name = input ("Enter your first name: ").capitalize()
 last_name = input ("Enter your last name:").capitalize()
 
-if len(first_name)< 10 and len(last_name) < 10:
-    print(first_name + " " + last_name)
-elif len(first_name) >= 10 and len(last_name) < 10:
-    print(first_name[0] + ". " + last_name)
-elif len(first_name) < 10 and len(last_name) >= 10:
-    print(first_name + " " + last_name[0] + ".")
-elif len(first_name) >= 10 and len(last_name) >= 10:
-    print(last_name)
+# if len(first_name)< 10 and len(last_name) < 10:
+#     print(first_name + " " + last_name)
+# elif len(first_name) >= 10 and len(last_name) < 10:
+#     print(first_name[0] + "." + last_name)
+# elif len(first_name) < 10 and len(last_name) >= 10:
+#     print(first_name + " " + last_name[0] + ".")
+# elif len(first_name) >= 10 and len(last_name) >= 10:
+#     print(last_name)
+# else:
+#     print("Unexpected input, please check the names entered.")
+
+if len(first_name) >= 10:
+    long_first_name = True
 else:
-    print("Unexpected input, please check the names entered.")
- 
+    long_first_name = False
+
+if len(last_name) >= 10:
+    long_last_name = True
+else:
+    long_last_name = False
+
+if not long_first_name and not long_last_name:
+    print(first_name + " " + last_name)
+elif long_first_name and not long_last_name:
+    print(first_name[0] + ". " + last_name)
+elif not long_first_name and long_last_name:
+    print(first_name + " " + last_name[0] + ".")
+elif long_first_name and long_last_name:
+    print(last_name)
