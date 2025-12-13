@@ -2,13 +2,16 @@ import colorama
 
 colorama.init()
 print(colorama.Fore.RED + 'This is red')
+#example of importing a module as a namespace
 
 from colorama import *
 init()
 print(Fore.BLUE + 'This is blue')
+#example of importing all functions from a module
 
 from colorama import init, Fore
 print(Fore.GREEN + 'This is green')
+#example of importing only specific functions from a module
 
 #we installed the colorama module using the requirements.txt file
 #but just writing "import requirements" will not work
